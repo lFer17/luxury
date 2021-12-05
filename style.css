@@ -23,6 +23,23 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #a4cbf5; 
 }
+.navbar-toggler{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  outline: none;
+}
+.navbar-toggler:focus{
+  outline: none;
+  border: none;
+}
+.navbar-toggler span{
+  color: white;
+  border: solid 1px;
+  border-radius: 4px;
+  height: 1px;
+}
 .navbar{
     background-color: #1520227c;
 }
@@ -280,3 +297,25 @@ p,h1,h2,h3,h4{
     color: #fff;
   }
   
+  @media (max-width: 467px) {
+
+    .marketing{
+      padding: 40px 20px;
+
+    }
+    .featurette-image{
+      width: 306px;
+    }
+    .lead{
+      transform: translateY(0px);
+  }
+  .featurette{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    column-gap: 10px;
+  }
+  .featurette .hidden{
+   display: none; 
+  }
+  }
